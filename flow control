@@ -1,0 +1,30 @@
+for i = 1:5 
+    disp(i); 
+end 
+
+
+i = 1; 
+while i <= 5 
+    disp(i); 
+    i = i + 1; 
+end 
+
+
+a = 5; 
+if a < 0 then 
+    disp('a is negative'); 
+elseif a == 0 then 
+    disp('a is zero'); 
+else 
+    disp('a is positive');
+
+    fruit = 'apple';
+
+select fruit
+    case 'apple'
+        disp('It is an apple.');
+    case 'orange'
+        disp('It is an orange.');
+    otherwise
+        disp('Unknown fruit.');
+end
