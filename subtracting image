@@ -1,0 +1,33 @@
+  
+
+im2=imread("C:\Users\Priyanshi Kaushik\Downloads\kp.jpg"); 
+ 
+im=imread("C:\Users\Priyanshi Kaushik\Downloads\gallery.jpg"); 
+ 
+imfinfo("C:\Users\Priyanshi Kaushik\Downloads\kp.jpg"); 
+Width : 2000 
+Height : 1262 
+Datatype : uint8 
+Channel : 3 
+imfinfo("C:\Users\Priyanshi Kaushik\Downloads\kp.jpg"); 
+Width : 2000 
+Height : 1262 
+Datatype : uint8 
+Channel : 3 
+ 
+c=imresize(im,[size(im2,1) size(im2,2)]); 
+ 
+im3=imsubtract(im2,c); 
+ 
+subplot(221);imshow(im2);title('first image'); 
+ 
+subplot(222);imshow(im);title('second image'); 
+ 
+subplot(223);imshow(im2);title('resize  image'); 
+ 
+subplot(224);imshow(im3);title('subtracted image'); 
+
+first image 
+resize image 
+second image 
+subtracted image 
