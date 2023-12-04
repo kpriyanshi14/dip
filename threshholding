@@ -1,0 +1,15 @@
+image = imread("C:\Users\Priyanshi Kaushik\Downloads\gallery.jpg"); 
+if size(image, 3) == 3 
+    image = rgb2gray(image); 
+end 
+ 
+threshold = 128;   
+binary_image = image > threshold; 
+subplot(1, 2, 1); 
+imshow(image); 
+title('Original Image'); 
+ 
+subplot(1, 2, 2); 
+imshow(binary_image); 
+title('Thresholded Image'); 
+imwrite(binary_image, 'thresholded_image.png'); 
