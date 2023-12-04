@@ -1,0 +1,13 @@
+num_samples = 1000;
+
+amplitude = 1;
+
+white_noise = amplitude * (rand(1, num_samples) - 0.5);
+
+plot(white_noise);
+
+title('White Noise');
+
+xlabel('Sample Index');
+
+ylabel('Amplitude');
