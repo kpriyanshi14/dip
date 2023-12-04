@@ -1,0 +1,22 @@
+Scaling 
+
+img1=imread("C:\Users\Priyanshi Kaushik\OneDrive\Desktop\priyanshi_dip\gallery.jpg"); 
+
+ 
+subplot(1,1,1) 
+
+ 
+imshow(img1); 
+
+ 
+subplot(1,2,2) 
+ 
+
+mat=[3,0,0;0,3,0;0,0,1];  
+
+ //scaling 
+ 
+a1=imtransform(img1,mat,"affine"); 
+ 
+
+imshow(a1); 
