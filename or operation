@@ -1,0 +1,20 @@
+im2=imread("C:\Users\Priyanshi Kaushik\Downloads\kp.jpg"); 
+ 
+im=imread("C:\Users\Priyanshi Kaushik\Downloads\gallery.jpg"); 
+ 
+imfinfo("C:\Users\Priyanshi Kaushik\Downloads\kp.jpg"); 
+Width : 2000 
+Height : 1262 
+Datatype : uint8 
+Channel : 3 
+imfinfo("C:\Users\Priyanshi Kaushik\Downloads\kp.jpg"); 
+Width : 2000 
+Height : 1262 
+Datatype : uint8 
+Channel : 3 
+ 
+c=imresize(im,[size(im2,1) size(im2,2)]); 
+ 
+result_image = im2 | c; 
+ 
+    imshow(result_image); 
