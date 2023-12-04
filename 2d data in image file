@@ -1,0 +1,8 @@
+% Create a sample 2-D data matrix
+data = [1 2 3; 4 5 6; 7 8 9];
+
+% Normalize the data to the range [0, 255] (assuming it's intensity data)
+normalized_data = uint8((data - min(data(:))) / (max(data(:)) - min(data(:))) * 255);
+
+% Write the data to an image file (e.g., PNG)
+imwrite(normalized_data, 'path/to/your/image.png');
