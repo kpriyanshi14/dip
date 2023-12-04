@@ -1,0 +1,17 @@
+img = imread("C:\Users\Priyanshi Kaushik\Downloads\gallery.jpg"); 
+
+  
+
+--> new_height = 400; 
+
+  
+
+--> new_width = 200; 
+
+  
+
+--> resized_image = imresize(img, [new_height, new_width]); 
+
+  
+
+--> imshow(resized_image); 
