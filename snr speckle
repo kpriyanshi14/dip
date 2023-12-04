@@ -1,0 +1,37 @@
+a=imread("C:\Users\Priyanshi Kaushik\OneDrive\Desktop\priyanshi_dip\gallery.jpg");
+
+subplot(2,2,1)
+
+imshow(a);
+
+title('original image')
+
+b=imnoise(a,'speckle');
+
+subplot(2,2,2)
+
+title('speckle noise image')
+
+imshow(b);
+
+img=immedian(b,5);
+
+subplot(2,2,3)
+
+title('filtered image')
+
+imshow(img);
+
+a = double(a);
+
+img = double(img);
+
+signal_power = sum(a(:).^2);
+
+noise_power = sum((a(:) - img(:)).^2);
+
+SNR = 10 * log10(signal_power / noise_power);
+
+disp('Signal-to-Noise Ratio (SNR):')
+
+disp(SNR)
